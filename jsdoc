@@ -40,5 +40,5 @@ then
 
 else
     # normal mode should be quiet
-    java -classpath "${BASEPATH}/rhino/js.jar" ${CMD} -modules "${URLPATH}/node_modules" -modules "${URLPATH}/rhino" -modules "${URLPATH}/lib" -modules "${URLPATH}" "${BASEPATH}/jsdoc.js" $ARGS --dirname="${BASEPATH}/" 
+    java -Xmx2048M -classpath "${BASEPATH}/rhino/js.jar" ${CMD} -modules "${URLPATH}/node_modules" -modules "${URLPATH}/rhino" -modules "${URLPATH}/lib" -modules "${URLPATH}" "${BASEPATH}/jsdoc.js" $ARGS --dirname="${BASEPATH}/" 
 fi
