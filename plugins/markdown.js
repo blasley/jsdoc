@@ -19,7 +19,7 @@ var tags;
  */
 function process(doclet) {
     tags.forEach(function(tag) {
-        if (!doclet.hasOwnProperty(tag)) {
+        if (!doclet || !doclet.hasOwnProperty(tag)) {
             return;
         }
 

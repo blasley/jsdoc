@@ -281,3 +281,11 @@ h6
 .disabled {
     color: #454545;
 }
+
+.inherited {
+	display: none;
+}
+
+dt.inherited h4 {
+	color: rgb(133, 164, 221);
+}
