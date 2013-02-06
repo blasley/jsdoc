@@ -290,6 +290,10 @@ h6
 	display: none;
 }
 
-dt.inherited h4 {
+dt h4.important {
+	margin-top: 0px;
+}
+
+dt.inherited h4.name {
 	color: rgb(133, 164, 221);
 }

@@ -1,7 +1,9 @@
 <?js var data = obj; ?>
 <dt <?js if(data.inherited){?>class="inherited"<?js } ?>>
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + name + (data.signature ? data.signature : '') ?></h4>
-    
+    <?js if (data.deprecated) { ?>
+        <h4 class="important">Deprecated</h3>
+    <?js } ?>
     <?js if (data.summary) { ?>
     <p class="summary"><?js= summary ?></p>
     <?js } ?>
