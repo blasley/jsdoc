@@ -228,7 +228,7 @@ function buildNav(members) {
         nav += '<h3>Namespaces</h3><ul>';
         members.namespaces.forEach(function(n) {
             if ( !hasOwnProp.call(seen, n.longname) ) {
-                nav += '<li>'+linkto(n.longname, n.name)+'</li>';
+                nav += '<li>'+linkto(n.longname, n.longname)+'</li>';
             }
             seen[n.longname] = true;
         });
