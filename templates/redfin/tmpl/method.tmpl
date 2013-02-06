@@ -2,14 +2,14 @@
 var data = obj;
 var self = this;
 ?>
-<dt>
+<dt <?js if(data.inherited){?>class="inherited"<?js } ?>>
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') + name + (kind !== 'event' ? data.signature : '') ?></h4>
     
     <?js if (data.summary) { ?>
     <p class="summary"><?js= summary ?></p>
     <?js } ?>
 </dt>
-<dd>
+<dd <?js if(data.inherited){?>class="inherited"<?js } ?>>
     
     <?js if (data.description) { ?>
     <div class="description">

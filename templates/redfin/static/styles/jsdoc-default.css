@@ -263,6 +263,10 @@ h6
 	display: table-cell;
 }
 
+.params p{
+	margin: 0px;
+}
+
 .params thead tr, .props thead tr
 {
 	background-color: #ddd;
@@ -280,4 +284,12 @@ h6
 
 .disabled {
     color: #454545;
+}
+
+.inherited {
+	display: none;
+}
+
+dt.inherited h4 {
+	color: rgb(133, 164, 221);
 }
